@@ -1,0 +1,11 @@
+h2 {
+  color: red;
+}
+p {
+  color: aqua;
+  background-color: rgb(207, 207, 21);
+}
+img {
+  width: 200px;
+  height: 200px;
+}

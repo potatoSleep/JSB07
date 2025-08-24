@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(244, 244, 244); /* hoặc #f4f4f4 */
+}
+
+.btnc {
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+.info {
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  color: #333;
+  margin: 40px auto;
+  border: 4px solid red;
+  border-radius: 20px;
+  text-align: left;
+}
+
+h2 {
+  color: #2c3e50;
+}

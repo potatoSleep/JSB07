@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Full</title>
+    <style>
+        /* Reset mặc định */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: url("https://picsum.photos/1200/400") no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* Section chung */
+        section {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        /* Skills */
+        .skills ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .skills li {
+            margin-bottom: 10px;
+        }
+
+        /* Projects */
+        .projects .item {
+            margin-bottom: 20px;
+        }
+
+        .projects img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* Blog */
+        .blog article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        /* Contact */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input,
+        .contact textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Nguyễn Văn A</h1>
+        <p>Web Developer | Designer | Learner</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Dự án</a>
+        <a href="#blog">Bài viết</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>👋 Giới thiệu</h2>
+        <p>Mình là Nguyễn Văn A, một học viên đang học HTML, CSS và JavaScript. Mình thích xây dựng các trang web đẹp,
+            đơn giản và dễ sử dụng.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <h2>💻 Kỹ năng</h2>
+        <ul>
+            <li>HTML & CSS cơ bản</li>
+            <li>JavaScript cơ bản</li>
+            <li>Thiết kế giao diện UI đơn giản</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2>📂 Dự án</h2>
+        <div class="item">
+            <h3>Portfolio Mini</h3>
+            <img src="https://picsum.photos/600/300" alt="Ảnh dự án 1">
+            <p>Một trang web giới thiệu cá nhân đơn giản.</p>
+        </div>
+        <div class="item">
+            <h3>Blog cá nhân</h3>
+            <img src="https://picsum.photos/601/301" alt="Ảnh dự án 2">
+            <p>Một blog nhỏ chia sẻ kiến thức học lập trình.</p>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="blog">
+        <h2>📝 Bài viết</h2>
+        <article>
+            <h3>Cách học HTML nhanh</h3>
+            <p>Để học HTML nhanh, bạn nên bắt đầu từ các thẻ cơ bản như h1-h6, p, ul, ol, a, img...</p>
+        </article>
+        <article>
+            <h3>Làm quen với CSS</h3>
+            <p>CSS giúp bạn tạo màu sắc, bố cục và làm trang web sinh động hơn. Hãy tập trung vào Box Model trước tiên.
+            </p>
+        </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>📩 Liên hệ</h2>
+        <form>
+            <input type="text" placeholder="Tên của bạn" required>
+            <input type="email" placeholder="Email của bạn" required>
+            <textarea rows="5" placeholder="Tin nhắn..."></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 - Portfolio của Nguyễn Văn A</p>
+    </footer>
+
+</body>
+
+</html>

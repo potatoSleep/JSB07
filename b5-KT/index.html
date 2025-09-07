@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Cá Nhân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        /* Header + menu */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout */
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* Blog post card */
+        .post {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .post img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .post-content {
+            padding: 15px;
+        }
+
+        .post-content h2 {
+            margin: 0 0 10px;
+            color: #2c3e50;
+        }
+
+        .post-content p {
+            color: #555;
+        }
+
+        /* About me */
+        .about {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        /* Contact */
+        .contact {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            max-width: 600px;
+        }
+
+        .contact h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact button {
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #34495e;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1> Blog Cá Nhân</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Bài viết</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main layout -->
+    <main>
+        <!-- Cột trái: blog posts -->
+        <section>
+            <div class="post">
+                <img src="https://picsum.photos/600/300" alt="Ảnh minh họa">
+                <div class="post-content">
+                    <h2>Đừng bỏ lỡ món Ramen khi đến Tokyo</h2>
+                    <p>Một trải nghiệm ẩm thực tuyệt vời mà bạn nên thử khi đặt chân đến Nhật Bản.</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="https://picsum.photos/601/300" alt="Ảnh minh họa">
+                <div class="post-content">
+                    <h2>5 bài hát khiến tôi nhớ mãi</h2>
+                    <p>Âm nhạc là nguồn cảm hứng bất tận. Đây là những ca khúc đã đồng hành cùng tôi.</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="https://picsum.photos/602/300" alt="Ảnh minh họa">
+                <div class="post-content">
+                    <h2>Kinh nghiệm học HTML & CSS</h2>
+                    <p>Tôi bắt đầu từ những thẻ cơ bản như h1, p, img... và dần tự tin hơn mỗi ngày.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cột phải: About me -->
+        <aside class="about">
+            <img src="https://picsum.photos/200" alt="Ảnh cá nhân">
+            <h2>About Me</h2>
+            <p>Tôi là một học sinh yêu thích lập trình web. Đây là nơi tôi chia sẻ kiến thức và trải nghiệm học tập.</p>
+        </aside>
+    </main>
+
+    <!-- Contact form -->
+    <section class="contact">
+        <h2>Liên hệ</h2>
+        <form>
+            <input type="text" placeholder="Họ và tên" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Nội dung"></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 - Blog cá nhân của tôi
+    </footer>
+
+</body>
+
+</html>
